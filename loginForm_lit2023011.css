@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(assets/OpenSans-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100vh;
+    width: 900px;
+    overflow: hidden;
+    margin: auto;
+    padding: 2% 0;
+}
+#phone{
+    position: relative;
+    margin-top: 5%;
+}
+#form{
+    border: 1px solid #c5c5c5;
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    padding: 5%;
+}
+#details{
+    height: 70%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+form input{
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+}
+form p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+#header h1{
+    font-family: 'Lobster';
+}
+#header p{
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 10px 0;
+}
+.blueBtn{
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: #0095f6;
+    color: #fff;
+    padding: 5px;
+    width:100%;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+#header a i{
+    font-size: 1rem;
+}
+#ss img{
+    position: absolute;
+    top:26px;
+    left: 157px;
+    opacity: 0;
+}
+#ss img:nth-of-type(1){
+    animation: 8s ssChange1 0s ease-in-out infinite;
+}
+#ss img:nth-of-type(2){
+    animation: 8s ssChange2 0s ease-in-out infinite;
+}
+#ss img:nth-of-type(3){
+    animation: 8s ssChange3 0s ease-in-out infinite;
+}
+#ss img:nth-of-type(4){
+    animation: 8s ssChange4 0s ease-in-out infinite;
+}
+
+@keyframes ssChange1 {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+}
+@keyframes ssChange2 {
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+@keyframes ssChange3 {
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+}
+@keyframes ssChange4 {
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
